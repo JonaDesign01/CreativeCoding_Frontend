@@ -84,7 +84,7 @@ window.onload = wsConnect;
 */
 
 function startTimer(button) {
-  let countdown = 180; // 3 minutes in seconds
+  let countdown = 60; // 120 = 2 minutes in seconds
   let timer = setInterval(function () {
     countdown--;
     let minutes = Math.floor(countdown / 60);
@@ -163,7 +163,7 @@ captureBtn.addEventListener('click', () => {
         enableButtons(captureBtn); // Enable the button and allow actions
         countdownTimer = null; // Reset the countdown timer
         message.textContent = '';
-      }, 180000); // Wait for 3 minutes before allowing the button to be clicked again
+      }, 60000); // 120000 is 2min in ms
       document.querySelector('.cs-loader').style.display = 'block';
     }, 3000);
   }
