@@ -7,9 +7,32 @@
     <title>Camera</title>
   </head>
   <body>
-    <video id="video"></video>
+    <div class="center">
+      <video id="video"></video>
+      <img id="faceMask" src="Facemask.svg" alt="" />
+    </div>
+    <div class="explain">
+      <div class="block">
+        <h2>Countdown for photo</h2>
+        <p id="message"></p>
+        <p id="timer"></p>
+      </div>
+      <div class="block">
+        <h2>Time until next go</h2>
+        <p id="status"></p>
+        <div class="cs-loader">
+          <div class="cs-loader-inner">
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+            <label>●</label>
+          </div>
+        </div>
+        <p id="cooldown"></p>
+      </div>
+    </div>
     <button id="capture-btn">Capture</button>
-    <img id="faceMask" src="Facemask.svg" alt="" />
-    <p id="timer">3</p>
   </body>
 </html>
