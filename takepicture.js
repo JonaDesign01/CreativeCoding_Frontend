@@ -14,7 +14,6 @@ navigator.mediaDevices
     console.error(error);
   });
 
-/*
 function startTimer() {
   let countdown = 60; // 120 = 2 minutes in seconds
   let timer = setInterval(function () {
@@ -127,8 +126,8 @@ function wsConnect() {
 }
 
 window.onload = wsConnect;
-*/
 
+/*
 function startTimer(button) {
   let countdown = 60; // 120 = 2 minutes in seconds
   let timer = setInterval(function () {
@@ -227,3 +226,4 @@ cooldownEl.addEventListener('DOMSubtreeModified', function () {
     mijnStatus.textContent = 'Status: NFT making in progress... please wait';
   }
 });
+*/
