@@ -10,6 +10,12 @@ async function loadGrid() {
     const response = await fetch('http://localhost:3000/give');
     const data = await response.json();
     images = data.files;
+    let length = images.length;
+    let firstPart = images.slice(0, Math.floor(length / 2)); // Extracts first half
+    let secondPart = images.slice(Math.floor(length / 2)); // Extracts second half
+
+    // Reverse the order of the parts
+    images = secondPart.concat(firstPart);
 
     drawImages(images);
   } catch (error) {

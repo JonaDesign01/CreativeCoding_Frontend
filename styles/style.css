@@ -97,8 +97,8 @@ p {
 #capture-btn {
   width: 700px;
   height: 100px;
-  background-color: white;
-  color: white;
+  background-color: transparent;
+  color: transparent;
   border: none;
   cursor: context-menu;
 }
@@ -117,7 +117,7 @@ p {
 
 #cooldown {
   font-size: 1em;
-  color: black;
+  color: white;
 }
 
 #faceMask {
@@ -134,7 +134,7 @@ p {
 }
 
 .cs-loader-inner {
-  color: black;
+  color: white;
 }
 
 .cs-loader-inner label {
@@ -190,4 +190,14 @@ p {
 .cs-loader-inner label:nth-child(1) {
   -webkit-animation: lol 3s 500ms infinite ease-in-out;
   animation: lol 3s 500ms infinite ease-in-out;
+}
+
+.black {
+  background-color: black;
+}
+.black h2 {
+  color: white;
+}
+.black p {
+  color: white;
 }
