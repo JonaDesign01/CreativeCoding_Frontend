@@ -6,12 +6,15 @@ Van elke versie van het grid wordt steeds automatisch een NFT gemaakt die je kan
 
 Ik maak gebruik van een Raspberry pi, een webcam, een printer, (eventueel Philips hue lampen) en een grote hoeveelheid aan (backend) code. De programmeertalen zijn voornamelijk javascript zelf en node.js.
 
-![raspberrypiconfiguratie.](/mdImages/videothumbnail.png 'This is a sample image.')
+![videothumbnail.](/mdImages/videothumbnail.png 'This is a sample image.')
 Link naar de video
 
 # Installation
 
 Below is the setup process to start the installation.
+
+You will need to use seperate backend code to run:
+https://github.com/JonaDesign01/CreativeCoding_Backend
 
 ## Backend
 
@@ -41,15 +44,15 @@ $npm run dev
 ```
 
 open http://localhost:5173/camera.html
-![raspberrypiconfiguratie.](/mdImages/camera.png 'This is a sample image.')
+![camera.](/mdImages/camera.png 'This is a sample image.')
 _This is the place where you take the pictures for the grid._
 
 open http://localhost:5173/qrnft.html
-![raspberrypiconfiguratie.](/mdImages/certificaat.png 'This is a sample image.')
+![certificaat.](/mdImages/certificaat.png 'This is a sample image.')
 _This is the place the certificate gets made._
 
 open http://localhost:5173 (grid)
-![raspberrypiconfiguratie.](/mdImages/grid.png 'This is a sample image.')
+![grid.](/mdImages/grid.png 'This is a sample image.')
 _This is the place where the grid gets made._
 
 ## Equipment
@@ -76,6 +79,12 @@ Connect the cables from the button to the Raspberry to pin 2 (5v Power) and pin 
 
 ![raspberrypiconfiguratie.](/mdImages/raspberrypi.jpg 'This is a sample image.')
 
+You will need to setup a nodered to be able to talk to the button
+![noderedmain.](/mdImages/noderedmain.png 'This is a sample image.')
+![noderedpin.](/mdImages/noderedpin.png 'This is a sample image.')
+![nodereddelay.](/mdImages/nodereddelay.png 'This is a sample image.')
+![noderedwebsocket.](/mdImages/noderedwebsocket.png 'This is a sample image.')
+
 ## Make Button
 
 Box design with: https://www.makercase.com/#/
@@ -95,11 +104,11 @@ Box design with: https://www.makercase.com/#/
 **Download as .svg,**
 modify the box design in illustrator so that you have a hole at the top for the liver to stick through (25mm) and a hole where the cables can come out.
 
-![raspberrypiconfiguratie.](/mdImages/box.svg 'This is a sample image.')
+![box.](/mdImages/box.svg 'This is a sample image.')
 
 **Save as .dxf,** after this you can lazer print this and put it together. (Download .dxf here)
 
-![raspberrypiconfiguratie.](/mdImages/boxbuild.JPG 'This is a sample image.')
+![boxbuild.](/mdImages/boxbuild.JPG 'This is a sample image.')
 
 Solder cables to the button.
 
